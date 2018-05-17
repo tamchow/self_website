@@ -1,0 +1,61 @@
+body {
+    background-color: black;
+    color: white;
+    height: 93vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 10% 70% 10%;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: span end;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+}
+
+nav {
+    grid-column-start: 1;
+    grid-column-end: span end;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+article {
+    grid-column-start: 1;
+    grid-column-end: span end;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: 100%;
+}
+
+article aside {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span last-line;
+}
+
+article main {
+    grid-column-start: 2;
+    grid-column-end: span end;
+    grid-row-start: 1;
+    grid-row-end: span last-line;
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: span end;
+    grid-row-start: row3-end;
+    grid-row-end: last-line;
+}
+
+footer p {
+    text-align: center;
+}
