@@ -6,6 +6,7 @@ body {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 10% 10% 70% 10%;
+    grid-gap: 3px;
 }
 
 header {
@@ -58,4 +59,57 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+
+main>section>h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+}
+aside h3 {
+    padding-left: 2em;
+}
+
+header,
+nav {
+    text-align: right;
+}
+
+nav h3 {
+    padding-right: 22em;
+}
+
+header h1 {
+    padding-right: 12em;
+}
+
+.img-container {
+    margin: auto;
+    position: relative;
+    perspective: 1000px;
+    margin-top: 5em;
+    width: 480px;
+    height: 360px;
+    border: 2px solid white;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    transition: transform 200ms ease;
+}
+
+img.rotate-in {
+    transform-origin: 0;
+    transition: transform 200ms ease;
+    transform: rotateY(30deg);
+}
+
+img.rotate-out {
+    transform-origin: 100%;
+    transition: transform 200ms ease;
+    transform: rotateY(-30deg);
 }
